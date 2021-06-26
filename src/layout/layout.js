@@ -1,4 +1,5 @@
 import React from "react";
+import "@fontsource/raleway";
 import "./layout.css";
 
 function Layout({ children }) {
