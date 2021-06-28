@@ -5,7 +5,7 @@ const HeroWaveBackground = () => {
   return (
     <Wrapper>
       <Background />
-      <HeaderWave
+      <Wave
         src="/images/waves/about-header-wave.svg"
         style={{ top: "120px" }}
       />
@@ -36,14 +36,6 @@ const Background = styled.div`
   width: 100%;
   height: 900px;
   z-index: -1;
-`;
-
-const HeaderWave = styled.img`
-  position: absolute;
-  z-index: -1;
-  animation: ${waveGentleBounce} 3s linear 0s infinite;
-  width: 100%;
-  height: 180px;
 `;
 
 const Wave = styled.img`
