@@ -7,11 +7,11 @@ const HeroWaveBackground = () => {
       <Background />
       <Wave
         src="/images/waves/about-header-wave.svg"
-        style={{ top: "120px" }}
+        style={{ top: "1047px", visibility: "hidden" }}
       />
-      <Wave src="/images/waves/about-wave1.svg" style={{ top: "305px" }} />
-      <Wave src="/images/waves/about-wave2.svg" style={{ top: "515px" }} />
-      <Wave src="/images/waves/about-wave3.svg" style={{ top: "886px" }} />
+      <Wave src="/images/waves/about-wave1.svg" style={{ top: "396px" }} />
+      <Wave src="/images/waves/about-wave2.svg" style={{ top: "574px" }} />
+      <Wave src="/images/waves/about-wave3.svg" style={{ top: "1049px" }} />
     </Wrapper>
   );
 };

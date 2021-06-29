@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "gatsby";
 import { H3, BodyIntro } from "../styles/TextStyles";
 
@@ -23,6 +23,17 @@ const Navbar = () => {
 
 export default Navbar;
 
+const fallAnimation = keyframes`
+  0% {
+    -webkit-transform: translateY(-100px);
+
+  }
+  100% {
+
+    -webkit-transform: translateY(0px);
+  }
+`;
+
 const Wrapper = styled.div`
   max-width: 1440px;
   margin: 50px auto 0;
@@ -32,6 +43,7 @@ const Wrapper = styled.div`
   grid-template-columns: 220px auto;
   align-content: center;
   justify-content: space-between;
+  animation: ${fallAnimation} 2s linear 1s;
 `;
 
 const Title = styled(H3)`
@@ -40,8 +52,9 @@ const Title = styled(H3)`
 
 const MenuWrapper = styled.div`
   display: grid;
-  gap: 50px;
+
   grid-template-columns: repeat(${(props) => props.count}, 100px);
+  gap: 50px;
 `;
 
 const MenuTextItem = styled(BodyIntro)`

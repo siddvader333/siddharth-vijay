@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import AboutWaveBackground from "../components/backgrounds/AboutWaveBackground";
-import { H1, H2 } from "../styles/TextStyles";
+import { BodyMain, H2 } from "../styles/TextStyles";
 import SocialIcons from "../components/common/SocialIcons";
 import PrimaryButton from "../components/common/PrimaryButton";
-
+import AboutWaveBackground from "../components/backgrounds/AboutWaveBackground";
 const AboutSection = () => {
   return (
     <Wrapper>
@@ -14,28 +13,27 @@ const AboutSection = () => {
           <Title>About Me</Title>
         </AboutHeader>
 
-        <ContentWrapper>
-          <MainContent>
-            <TextBody>
-              <span style={{ fontWeight: 800 }}>Hello!</span>
-              <br />
-              My name is Siddharth Vijay. <br />
-              I'm a software engineer. <br />
-              I'm based in Toronto. <br />
-            </TextBody>
-            <ButtonGroup>
-              <PrimaryButton text="Get Resume" />
-              <SocialIcons />
-            </ButtonGroup>
-          </MainContent>
-          <ExtraContent>
-            <AboutMeIllustration src="/images/totoro/About-illustration.svg" />
-            <ExtraTextBody>
-              You might be able to tell but, I really like anime. How many
-              Totoros can you find?
-            </ExtraTextBody>
-          </ExtraContent>
-        </ContentWrapper>
+        <MainContent>
+          <TextBody>
+            <span style={{ fontWeight: 800 }}>Hello! </span>
+            My name is Siddharth Vijay and I am a software engineer based in
+            Toronto. I just graduated from the University of Toronto with a
+            Computer Engineering Degeree.
+            <br />
+            <br />
+            My passion for coding started in 9th grade when I took an intro to
+            Mobile App Programming course and was so astonished by seeing
+            something I coded come to life that I wanted to chase that feeling.
+            I love working on innovative and interesting projects and seeing the
+            design come to fruition.
+          </TextBody>
+          <AboutMeIllustration src="/images/totoro/About-illustration.svg" />
+        </MainContent>
+
+        <ButtonGroup>
+          <PrimaryButton text="Get Resume" />
+          <SocialIcons />
+        </ButtonGroup>
       </AboutWrapper>
     </Wrapper>
   );
@@ -50,57 +48,43 @@ const Wrapper = styled.div`
 const AboutWrapper = styled.div`
   max-width: 1440px;
   margin: 0 auto;
-  height: 1015px;
-  margin-top: 120px;
-  padding: 0;
+  padding: 120px 141px 380px;
   display: grid;
-  grid-template-rows: 180px auto;
-  gap: 75px;
+  grid-template-rows: 55px 320px auto;
+  gap: 115px;
 `;
 
 const AboutHeader = styled.div`
-  padding: 43px 1058px 83px 105px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 `;
 
-const Title = styled(H1)`
+const Title = styled(H2)`
   width: 277px;
   height: 54px;
 `;
 
-const ContentWrapper = styled.div`
-  padding: 0px 70px 0px 30px;
-  display: grid;
-  grid-template-rows: 215px auto;
-  gap: 50px;
-`;
-
 const MainContent = styled.div`
   display: grid;
-  grid-template-columns: 551px auto;
-  gap: 186px;
-  padding: 0px 0px 0px 92px;
-`;
-
-const TextBody = styled(H2)``;
-
-const ButtonGroup = styled.div`
-  display: grid;
-  grid-template-columns: 250px auto;
-  gap: 40px;
-  align-content: center;
-`;
-
-const ExtraContent = styled.div`
-  display: grid;
-  grid-template-columns: 750px auto;
-  gap: 55px;
-  padding: 0;
+  grid-template-columns: 550px auto;
+  gap: 100px;
 `;
 
 const AboutMeIllustration = styled.img`
-  width: 750px;
-  height: 309px;
+  width: 498px;
+  align-self: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
 `;
-const ExtraTextBody = styled(H2)`
-  padding-top: 106px;
+
+const TextBody = styled(BodyMain)``;
+
+const ButtonGroup = styled.div`
+  display: grid;
+  grid-template-rows: 77px auto;
+  gap: 50px;
+  align-content: center;
+  justify-content: center;
+  height: 180px;
 `;

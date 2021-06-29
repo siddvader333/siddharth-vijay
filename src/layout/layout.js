@@ -4,10 +4,9 @@ import "./layout.css";
 import Navbar from "./Navbar";
 
 function Layout({ children }) {
-  console.log("layout");
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <main>{children}</main>
     </>
   );
