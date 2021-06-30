@@ -47,14 +47,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled(H3)`
-  width: 250px;
-`;
-
-const MenuWrapper = styled.div`
-  display: grid;
-
-  grid-template-columns: repeat(${(props) => props.count}, 100px);
-  gap: 50px;
+  width: 220px;
 `;
 
 const MenuTextItem = styled(BodyIntro)`
@@ -67,6 +60,19 @@ const MenuTextItem = styled(BodyIntro)`
     transform: scale(1.05) translateY(-5px);
     border-bottom: 1px solid black;
     padding-bottom: 3px;
+  }
+`;
+
+const MenuWrapper = styled.div`
+  display: grid;
+
+  grid-template-columns: repeat(${(props) => props.count}, 100px);
+  gap: 50px;
+  @media (max-width: 1024px) {
+    grid-template-columns: 100px;
+    > ${MenuTextItem} {
+      display: none;
+    }
   }
 `;
 

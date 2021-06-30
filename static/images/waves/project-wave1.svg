@@ -1,0 +1,20 @@
+<svg width="418" height="647" viewBox="0 0 418 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f)">
+<circle opacity="0.111111" cx="353.557" cy="288.778" r="239.648" transform="rotate(-8 353.557 288.778)" stroke="#226341" stroke-width="0.833664" stroke-linecap="round"/>
+<circle opacity="0.222222" cx="351.028" cy="292.26" r="249.009" transform="rotate(-7 351.028 292.26)" stroke="#226341" stroke-width="0.91703" stroke-linecap="round"/>
+<circle opacity="0.333333" cx="348.13" cy="296.04" r="258.37" transform="rotate(-6 348.13 296.04)" stroke="#226341" stroke-width="1.0004" stroke-linecap="round"/>
+<circle opacity="0.444444" cx="344.852" cy="300.109" r="267.731" transform="rotate(-5 344.852 300.109)" stroke="#226341" stroke-width="1.08376" stroke-linecap="round"/>
+<circle opacity="0.555556" cx="341.194" cy="304.458" r="277.092" transform="rotate(-4 341.194 304.458)" stroke="#226341" stroke-width="1.16713" stroke-linecap="round"/>
+<circle opacity="0.666667" cx="337.137" cy="309.078" r="286.454" transform="rotate(-3 337.137 309.078)" stroke="#226341" stroke-width="1.2505" stroke-linecap="round"/>
+<circle opacity="0.777778" cx="332.68" cy="313.959" r="295.815" transform="rotate(-2 332.68 313.959)" stroke="#226341" stroke-width="1.33386" stroke-linecap="round"/>
+<circle opacity="0.888889" cx="327.819" cy="319.09" r="305.176" transform="rotate(-1 327.819 319.09)" stroke="#226341" stroke-width="1.41723" stroke-linecap="round"/>
+<circle cx="322.538" cy="324.462" r="314.537" stroke="#226341" stroke-width="1.50059" stroke-linecap="round"/>
+</g>
+<defs>
+<filter id="filter0_f" x="0.25" y="0.310303" width="646.078" height="646.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3.5" result="effect1_foregroundBlur"/>
+</filter>
+</defs>
+</svg>

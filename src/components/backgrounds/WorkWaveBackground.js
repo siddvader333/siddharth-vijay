@@ -1,21 +1,17 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const AboutWaveBackground = () => {
+const WorkWaveBackground = () => {
   return (
     <Wrapper>
       <Background />
-      <Wave src="/images/waves/about-wave1.svg" style={{ top: "396px" }} />
-      <Wave src="/images/waves/about-wave2.svg" style={{ top: "574px" }} />
-      <Wave
-        src="/images/waves/about-wave3.svg"
-        style={{ top: "949px", filter: "blur(30px)" }}
-      />
+      <Wave src="/images/waves/work-wave1.svg" style={{ top: "0px" }} />
+      <Wave src="/images/waves/work-wave2.svg" style={{ top: "204px" }} />
     </Wrapper>
   );
 };
 
-export default AboutWaveBackground;
+export default WorkWaveBackground;
 
 const waveGentleBounce = keyframes`
   0%, 100% {
@@ -33,7 +29,6 @@ const Wrapper = styled.div`
 const Background = styled.div`
   position: absolute;
   width: 100%;
-  height: 900px;
   z-index: -1;
 `;
 

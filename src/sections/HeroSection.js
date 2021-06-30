@@ -45,6 +45,7 @@ const ContentWrapper = styled.div`
   display: grid;
   grid-template-rows: 220px auto;
   gap: 70px;
+  border: 1px solid red;
 `;
 
 const TextWrapper = styled(H1)`

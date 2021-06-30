@@ -21,7 +21,7 @@ const TabWrapper = styled.div`
   width: ${(props) => props.width || "195px"};
   height: ${(props) => props.height || "50px"};
   background: ${(props) =>
-    props.isSelected ? "rgba(110, 149, 84, 0.7)" : "$FFFFFF"};
+    props.isSelected ? "rgba(110, 149, 84, 0.7)" : "rgba(255, 255, 255, 0.96)"};
   /* Text 2 */
 
   border: 0.5px solid #656660;

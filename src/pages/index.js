@@ -3,6 +3,7 @@ import Layout from "../layout/layout";
 import HeroSection from "../sections/HeroSection";
 import AboutSection from "../sections/AboutSection";
 import WorkSection from "../sections/WorkSection";
+import ProjectSection from "../sections/ProjectSection";
 
 function IndexPage() {
   return (
@@ -10,6 +11,7 @@ function IndexPage() {
       <HeroSection />
       <AboutSection />
       <WorkSection />
+      <ProjectSection />
     </Layout>
   );
 }

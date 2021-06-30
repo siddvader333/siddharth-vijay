@@ -63,6 +63,7 @@ const AboutHeader = styled.div`
 const Title = styled(H2)`
   width: 277px;
   height: 54px;
+  text-align: center;
 `;
 
 const MainContent = styled.div`
