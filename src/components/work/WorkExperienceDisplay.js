@@ -25,7 +25,7 @@ const WorkExperienceDisplay = () => {
     <Wrapper>
       <TabsWrapper length={WorkData.length}>{tabsList}</TabsWrapper>
       <ContentWrapper>
-        <ContentCard width="800px" height="500px">
+        <ContentCard>
           <WorkExperienceLayout
             title={WorkData[tabSelected].title}
             date={WorkData[tabSelected].date}

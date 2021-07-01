@@ -50,7 +50,7 @@ const AboutWrapper = styled.div`
   margin: 0 auto;
   padding: 120px 30px;
   display: grid;
-  gap: 115px;
+  gap: 100px;
   grid-template-rows: 54px fit-content() fit-content();
 
   @media (max-width: 1210px) {
@@ -70,12 +70,12 @@ const AboutHeader = styled.div`
   display: grid;
   justify-content: center;
   align-content: center;
+  text-align: center;
 `;
 
 const Title = styled(H2)`
   width: 277px;
   height: 54px;
-  text-align: center;
 `;
 
 const MainContent = styled.div`

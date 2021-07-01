@@ -34,19 +34,44 @@ const Wrapper = styled.div`
   grid-template-rows: 90px auto;
   gap: 50px;
   padding: 30px 37px;
+
+  @media (max-width: 865px) {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 50px;
+  }
 `;
 
 const Header = styled.div`
   display: grid;
   grid-template-rows: 47px auto;
   gap: 13px;
-  margin-left: 23px;
+  padding: 0px 23px;
+
+  @media (max-width: 865px) {
+    margin-left: 0px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 `;
 
 const MainHeader = styled.div`
   display: grid;
   grid-template-columns: 190px auto;
   justify-content: space-between;
+  justify-items: left;
+
+  @media (max-width: 865px) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-items: center;
+  }
 `;
 
 const Title = styled(H2)``;
@@ -66,7 +91,8 @@ const ListItem = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
-  align-items: center;
+  justify-content: left;
+  text-align: left;
 `;
 
 const ListIcon = styled.img``;

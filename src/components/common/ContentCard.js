@@ -13,8 +13,8 @@ export default ContentCard;
 
 const Wrapper = styled.div`
   background: rgba(255, 255, 255, 0.95);
-  width: ${(props) => props.width || "800px"};
-  height: ${(props) => props.height || "500px"};
+  width: 100%;
+  height: 100%;
 
   /* Card Shadow 1 */
 
