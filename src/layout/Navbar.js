@@ -35,23 +35,28 @@ const fallAnimation = keyframes`
 `;
 
 const Wrapper = styled.div`
-  max-width: 1440px;
-  margin: 50px auto 0;
-  height: 50px;
-  padding: 0px 50px;
+  position: absolute;
+  top: 50px;
   display: grid;
   grid-template-columns: 220px auto;
-  align-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 0px 50px;
+  align-items: center;
   justify-content: space-between;
   animation: ${fallAnimation} 2s linear 1s;
+  @media (max-width: 768px) {
+    top: 30px;
+    padding: 0 30px;
+  }
+  @media (max-width: 450px) {
+    padding: 0 20px;
+  }
 `;
 
-const Title = styled(H3)`
-  width: 220px;
-`;
+const Title = styled(H3)``;
 
 const MenuTextItem = styled(BodyIntro)`
-  width: 100px;
   text-align: center;
   text-decoration: none;
   transition: 0.5s;
@@ -65,9 +70,9 @@ const MenuTextItem = styled(BodyIntro)`
 
 const MenuWrapper = styled.div`
   display: grid;
-
-  grid-template-columns: repeat(${(props) => props.count}, 100px);
   gap: 50px;
+  grid-template-columns: repeat(${(props) => props.count}, auto);
+
   @media (max-width: 1024px) {
     grid-template-columns: 100px;
     > ${MenuTextItem} {

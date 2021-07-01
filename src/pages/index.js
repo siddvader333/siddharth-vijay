@@ -4,6 +4,7 @@ import HeroSection from "../sections/HeroSection";
 import AboutSection from "../sections/AboutSection";
 import WorkSection from "../sections/WorkSection";
 import ProjectSection from "../sections/ProjectSection";
+import HeroWaveBackground from "../components/backgrounds/HeroWaveBackground";
 
 function IndexPage() {
   return (

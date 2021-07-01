@@ -46,12 +46,24 @@ const Wrapper = styled.div`
 `;
 
 const AboutWrapper = styled.div`
-  max-width: 1440px;
+  max-width: 1234px;
   margin: 0 auto;
-  padding: 120px 141px 380px;
+  padding: 120px 30px;
   display: grid;
-  grid-template-rows: 55px 320px auto;
   gap: 115px;
+  grid-template-rows: 54px fit-content() fit-content();
+
+  @media (max-width: 1210px) {
+    padding: 100px 20px;
+    display: grid;
+    grid-template-rows: 54px fit-content() fit-content();
+    justify-items: center;
+    gap: 50px;
+  }
+
+  @media (max-width: 450px) {
+    gap: 30px;
+  }
 `;
 
 const AboutHeader = styled.div`
@@ -70,6 +82,14 @@ const MainContent = styled.div`
   display: grid;
   grid-template-columns: 550px auto;
   gap: 100px;
+  @media (max-width: 1210px) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 50px;
+    justify-items: center;
+    text-align: center;
+  }
 `;
 
 const AboutMeIllustration = styled.img`
@@ -77,6 +97,10 @@ const AboutMeIllustration = styled.img`
   align-self: center;
   padding-top: 35px;
   padding-bottom: 35px;
+
+  @media (max-width: 865px) {
+    width: 100%;
+  }
 `;
 
 const TextBody = styled(BodyMain)``;
