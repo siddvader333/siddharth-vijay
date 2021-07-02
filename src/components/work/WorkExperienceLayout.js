@@ -78,6 +78,10 @@ const Title = styled(H2)``;
 const Date = styled(BodyMain)``;
 const SubHeader = styled(BodyIntro)`
   text-align: left;
+
+  @media (max-width: 450px) {
+    text-align: center;
+  }
 `;
 
 const ContentList = styled.div`

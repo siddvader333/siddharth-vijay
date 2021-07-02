@@ -51,6 +51,9 @@ const TabsWrapper = styled.div`
   grid-template-columns: repeat(${(props) => props.length}, auto);
   gap: 12px;
   justify-content: start;
+  @media (max-width: 450px) {
+    overflow: scroll;
+  }
 `;
 
 const ContentWrapper = styled.div``;

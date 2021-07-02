@@ -35,6 +35,10 @@ const WorkWrapper = styled.div`
   padding: 120px 30px;
   gap: 100px;
   grid-template-rows: 55px fit-content();
+
+  @media (max-width: 450px) {
+    gap: 50px;
+  }
 `;
 
 const WorkHeader = styled.div`
@@ -47,6 +51,10 @@ const WorkHeader = styled.div`
 const Title = styled(H2)`
   width: 383px;
   height: 54px;
+  @media (max-width: 450px) {
+    width: 100%;
+    font-size: 25px;
+  }
 `;
 
 const MainContent = styled.div`
